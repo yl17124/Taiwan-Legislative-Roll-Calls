@@ -4,12 +4,14 @@ author: "David Yen-Chieh Liao"
 output: html_notebook
 ---
 ##### Pakages
-```{r}
-setwd("~/Box/myBox/Documents/Taiwan Scaling Dataset")
+```{r, echo = FALSE}
+knitr::opts_chunk$set(fig.path = "README_figs/README-")
 ```
 
 ##### Functions
 ```{r}
+setwd("~/Box/myBox/Documents/Taiwan Scaling Dataset")
+
 packagesInstall <- function(pkg){
   new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])] 
   if (length(new.pkg)) 
@@ -61,7 +63,6 @@ binaryIRT.Calculation <-function(df_1, df_2, df_3, year, .anchor_subject, sessio
   return(results.main)
     }
 
-
 binaryIRT.CalculationSession <- function(df_1, df_2, df_3, .anchor_subject, session,... ){
   ### pks require: tidyverse(dplyr), reshape2
   dataframesDcasted <- df_1 %>%
@@ -101,8 +102,6 @@ binaryIRT.CalculationSession <- function(df_1, df_2, df_3, .anchor_subject, sess
     results.main["session"] <- session
   return(results.main)
 }
-
-
 
 
 
@@ -383,37 +382,39 @@ packagesInstall(c("extrafont", "tidyverse","readxl", "ggpubr", "reshape2", "pscl
 
 #### Read Dataset
 ```{r}
+dir <- "/Users/yenchiehliao/Box/myBox/Documents/Taiwan Scaling Dataset/"
+
 # The 2nd Session Legislative Yuan
-second_1 <- read_excel("2nd/二屆立委記名投票記錄正式版.xlsx") 
-second_2 <- read_excel("2nd/第二屆立法院院會記名表決內容背景資料.xlsx")
-second_3 <- read_excel("2nd/各黨各會期參與委員會.xlsx")
-second_4 <- read_excel("2nd/第二屆黨籍立委(研究對象).xlsx")
+second_1 <- read_excel(paste(dir, "2nd/二屆立委記名投票記錄正式版.xlsx", sep = "")) 
+second_2 <- read_excel(paste(dir, "2nd/第二屆立法院院會記名表決內容背景資料.xlsx", sep = "")) 
+second_3 <- read_excel(paste(dir, "2nd/各黨各會期參與委員會.xlsx", sep = "")) 
+second_4 <- read_excel(paste(dir, "2nd/第二屆黨籍立委(研究對象).xlsx", sep = "")) 
 
 # The 3rd Session Legislative Yuan
-third_1 <- read_excel("3rd/記名投票紀錄更正版.xlsx")
-third_2 <- read_excel("3rd/第三屆立法院院會記名表決內容背景資料.xlsx")
-third_3 <- read_excel("3rd/政黨記名投票紀錄更正版 查詢.xlsx")
-third_4 <- read_excel("3rd/常設委員會名單.xlsx")
+third_1 <- read_excel(paste(dir, "3rd/記名投票紀錄更正版.xlsx", sep = "")) 
+third_2 <- read_excel(paste(dir, "3rd/第三屆立法院院會記名表決內容背景資料.xlsx", sep = "")) 
+third_3 <- read_excel(paste(dir, "3rd/政黨記名投票紀錄更正版 查詢.xlsx", sep = "")) 
+third_4 <- read_excel(paste(dir, "3rd/常設委員會名單.xlsx", sep = "")) 
 
 # The 4th Session Legislative Yuan
-fourth_1 <- read_excel("4th/四屆立委記名投票記錄.xlsx")
-fourth_2 <- read_excel("4th/第四屆立法院院會記名表決內容背景資料.xlsx")
-fourth_3 <- read_excel("4th/記名投票政黨 查詢.xlsx")
-fourth_4 <- read_excel("4th/常設委員會名單.xlsx")
+fourth_1 <- read_excel(paste(dir, "4th/四屆立委記名投票記錄.xlsx", sep = "")) 
+fourth_2 <- read_excel(paste(dir, "4th/第四屆立法院院會記名表決內容背景資料.xlsx", sep = "")) 
+fourth_3 <- read_excel(paste(dir, "4th/記名投票政黨 查詢.xlsx", sep = "")) 
+fourth_4 <- read_excel(paste(dir, "4th/常設委員會名單.xlsx", sep = "")) 
 
 # The 5th Session Legislative Yuan
-fifth_1 <- read_excel("5th/第五屆立委記名投票記錄.xlsx")
-fifth_2 <- read_excel("5th/第五屆立法院院會記名表決內容背景資料.xlsx")
+fifth_1 <- read_excel(paste(dir, "5th/第五屆立委記名投票記錄.xlsx", sep = "")) 
+fifth_2 <- read_excel(paste(dir, "5th/第五屆立法院院會記名表決內容背景資料.xlsx", sep = "")) 
 colnames(fifth_2)[colnames(fifth_2) == "編號"] <- "表決編號" 
-fifth_3 <- read_excel("5th/綜合查詢.xlsx")
+fifth_3 <- read_excel(paste(dir, "5th/綜合查詢.xlsx", sep = "")) 
 colnames(fifth_3)[colnames(fifth_3) == "第一會期黨團"] <- "黨籍"
-fifth_4 <- read_excel("5th/常設委員會名單.xlsx")
+fifth_4 <- read_excel(paste(dir, "5th/常設委員會名單.xlsx", sep = "")) 
 
 # The 6th Session Legislative Yuan
-sixth_1 <- read_excel("6th/第六屆立委記名投票紀錄.xlsx")
-sixth_2 <- read_excel("6th/第六屆立法院院會記名表決內容背景資料 (另行編碼）.xlsx")
+sixth_1 <- read_excel(paste(dir, "6th/第六屆立委記名投票紀錄.xlsx", sep = "")) 
+sixth_2 <- read_excel(paste(dir, "6th/第六屆立法院院會記名表決內容背景資料 (另行編碼）.xlsx", sep = "")) 
 colnames(sixth_2)[colnames(sixth_2) == "編號"] <- "表決編號"
-sixth_3 <- read_excel("6th/第六屆立委個人檔案 查詢.xlsx")
+sixth_3 <- read_excel(paste(dir, "6th/第六屆立委個人檔案 查詢.xlsx", sep = "")) 
 colnames(sixth_3)[colnames(sixth_3) == "第二會期黨團"] <- "黨籍"
 sixth_3$黨籍[sixth_3$黨籍 == "中國國民黨" | 
              sixth_3$黨籍 == "民國96年11月26日宣誓就職，遞補劉憶如委員"|
@@ -438,13 +439,13 @@ sixth_3$黨籍[sixth_3$黨籍 == "親民黨（民國95年1月27日退出親民�
              sixth_3$黨籍 == "民國96年1月18日宣誓就職，遞補顧崇廉委員。"] <- "親民黨"
 sixth_3$黨籍[sixth_3$黨籍 == "無黨團結聯盟"]  <- "無黨團結聯盟"
 sixth_3$黨籍[sixth_3$黨籍 =="無" ]  <- NA
-sixth_4 <- read_excel("6th/常設委員會名單FINAL.xlsx")
+sixth_4 <- read_excel(paste(dir, "6th/常設委員會名單FINAL.xlsx", sep = "")) 
 
 # The 7th Session Legislative Yuan
-seventh_1 <- read_excel("7th/第七屆立委個人投票記錄2.xlsx")
-seventh_2 <- read_excel("7th/第七屆立法院院會記名表決內容.xlsx")
+seventh_1 <- read_excel(paste(dir, "7th/第七屆立委個人投票記錄2.xlsx", sep = "")) 
+seventh_2 <- read_excel(paste(dir, "7th/第七屆立法院院會記名表決內容.xlsx", sep = "")) 
 colnames(seventh_2)[colnames(seventh_2) == "編號"] <- "表決編號"
-seventh_3 <- read_excel("7th/第七屆立委個人檔案2.xlsx")
+seventh_3 <- read_excel(paste(dir, "7th/第七屆立委個人檔案2.xlsx", sep = "")) 
 colnames(seventh_3)[colnames(seventh_3) == "第一會期黨團"] <- "黨籍"
 seventh_3$黨籍[seventh_3$黨籍 == "中國國民黨（2008年7月1日辭去立法委員職務，轉任金管會副主委）"|
                seventh_3$黨籍 == "99年3月8日宣誓就職(遞補邱鏡淳委員)" |
@@ -471,13 +472,13 @@ seventh_3$黨籍[seventh_3$黨籍 == "中國國民黨（2008年7月1日辭去立
 seventh_3$黨籍[seventh_3$黨籍 == "99年1月18日宣誓就職（遞補廖正井委員）"|
                seventh_3$黨籍 == "2011年3月11日宣誓就職"|
                seventh_3$黨籍 == "100年3月11日宣誓就職"] <- "民主進步黨"
-seventh_4 <- read_excel("7th/第七屆委員會名單.xlsx")
+seventh_4 <- read_excel(paste(dir, "7th/第七屆委員會名單.xlsx", sep = "")) 
 
 # The 8th Session Legislative Yuan
-eighth_1 <- read_excel("8th/第八屆立委個人投票記錄.xlsx")
-eighth_2 <- read_excel("8th/第八屆立法院院會記名表決內容.xlsx")
+eighth_1 <- read_excel(paste(dir, "8th/第八屆立委個人投票記錄.xlsx", sep = "")) 
+eighth_2 <- read_excel(paste(dir, "8th/第八屆立法院院會記名表決內容.xlsx", sep = "")) 
 colnames(eighth_2)[colnames(eighth_2) == "編號"] <- "表決編號"
-eighth_3 <- read_excel("8th/第八屆立委個人檔案2.xlsx")
+eighth_3 <- read_excel(paste(dir, "8th/第八屆立委個人檔案2.xlsx", sep = "")) 
 colnames(eighth_3)[colnames(eighth_3) == "第一會期黨團"] <- "黨籍"
 eighth_3$黨籍[eighth_3$立委姓名 == "顏寬恒" & eighth_3$黨籍 == "102年2月1日公告遞補"|
               eighth_3$立委姓名 == "陳怡潔" & eighth_3$黨籍 == "民國102年3月22日公告遞補"|
@@ -499,12 +500,12 @@ eighth_3$黨籍[eighth_3$立委姓名 == "陳素月" & eighth_3$黨籍 == "民�
 eighth_3$黨籍[eighth_3$立委姓名 == "顏清標" & eighth_3$黨籍 == "無"|
               eighth_3$立委姓名 == "高金素梅" & eighth_3$黨籍 == "無"|
               eighth_3$立委姓名 == "陳雪生" & eighth_3$黨籍 == "無"] <- "無黨團結聯盟"
-eighth_4 <- read_excel("8th/第八屆委員會名單.xlsx")
+eighth_4 <- read_excel(paste(dir, "8th/第八屆委員會名單.xlsx", sep = "")) 
 ```
 
 #### Computing 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
-yealyrbiIRTRollCall<- rbind(
+yealyrbiIRTRollCall <- rbind(
   binaryIRT.Calculation(df_1 = second_1, df_2 = second_2, df_3 = second_3, year = 1993, .anchor_subject = 80, session = "2nd Session"),
   binaryIRT.Calculation(df_1 = second_1, df_2 = second_2, df_3 = second_3, year = 1994, .anchor_subject = 80, session = "2nd Session"),
   binaryIRT.Calculation(df_1 = second_1, df_2 = second_2, df_3 = second_3, year = 1995, .anchor_subject = 80, session = "2nd Session"),
