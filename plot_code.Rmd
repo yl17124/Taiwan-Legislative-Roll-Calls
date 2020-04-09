@@ -1,12 +1,7 @@
 ---
 title: "Scaling Taiwan Legislative Roll Calls using EM Algorithms for Estimating IRT Models"
 author: "David, Yen-Chieh Liao"
-output:
-  html_document:
-    toc: true
-    toc_float:
-      collapsed: true
-      smooth_scroll: true
+output: rmarkdown::github_document
 ---
 
 ### Functions
