@@ -16,7 +16,7 @@ This repository stores scripts, plots, and data for initial analytics to Taiwan 
 
 
 ### Author information
-** David, Yen-Chieh Liao**  <br />
+**David, Yen-Chieh Liao**  <br />
 University of Essex <br />
 Department of Government<br />
 Wivenhoe Park, Colchester CO4 3SQ<br />
