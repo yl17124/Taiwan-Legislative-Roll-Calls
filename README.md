@@ -6,16 +6,15 @@
 
 
 #### Estimates of Ideological Positioning during the Electoral Systen Change (by Sessions)
-<img src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-5-1.png" width="700" height="500" />
-
-<img src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-6-1.png" width="700" height="500" />
-
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-6-1.png" width="ㄓ00">
+  <img width="460" height="300" src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-5-1.png">
 </p>
 
 
+<p align="center">
+  <img width="460" height="300" src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-6-1.png" >
+</p>
 
 #### Estimates of Ideological Positioning during the Electoral Systen Change (by Year)
 <img src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-7-1.png" width="700" height="500" />
