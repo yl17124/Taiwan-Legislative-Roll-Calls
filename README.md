@@ -1,8 +1,10 @@
 ##  Electoral Reform and Ideological Positioning: Heterogeneous Evidence from Taiwan Legislative Roll Calls (Paper 3)
 
 <div style="text-align: center">
+  
 This repository stores scripts, plots, and data for initial analytics to Taiwan legislative roll calls. The final draft will present at the panel of Candidates within Parties in 2020 APSA. The analysis for this project heavily relys on a large amount of processing  from computational clusters. I thank [CERES IT](https://hpc.essex.ac.uk/) at University of Essex for providing HPC clusters.
-<div style="text-align: center">  
+
+</div>
 
 
 ### 1. Binary IRT Model Estimates of Ideal Points Positionings by Session
