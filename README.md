@@ -8,7 +8,7 @@
 #### Estimates of Ideological Positioning during the Electoral Systen Change (by Sessions)
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-5-1.png">
+  <img width="560" height="400" src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-5-1.png">
 </p>
 
 
