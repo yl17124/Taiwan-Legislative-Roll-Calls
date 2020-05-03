@@ -1,11 +1,8 @@
 ##  Electoral Reform and Ideological Positioning: Heterogeneous Evidence from Taiwan Legislative Roll Calls
 This repository stores scripts, plots, and data for initial analytics to Taiwan legislative roll calls. The final draft will present at the panel of Candidates within Parties in 2020 APSA.
 
-src="img/flexbox.jpg"
 
 ### 1. Binary IRT Model Estimates of Ideal Points Positionings by Session
-
-<img src="plot_code_files/figure-gfm/unnamed-chunk-5-1.png" width="700" height="500" />
 
 <img src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-5-1.png" width="700" height="500" />
 
@@ -20,7 +17,7 @@ src="img/flexbox.jpg"
 
 ***
 
-### Author information
+### Author Information
 **David, Yen-Chieh Liao**  <br />
 University of Essex <br />
 Department of Government<br />
