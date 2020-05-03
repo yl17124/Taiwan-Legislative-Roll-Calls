@@ -5,8 +5,7 @@
 - The analysis for this project heavily relys on a large amount of data processing from computational clusters. I thank [CERES IT](https://hpc.essex.ac.uk/) at University of Essex for providing HPC clusters.
 
 
-#### Binary IRT Model Estimates of Ideal Points Positionings by Session
-
+#### Estimates of Ideological Positioning During Electoral Systen Changes 
 <img src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-5-1.png" width="700" height="500" />
 
 <img src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-6-1.png" width="700" height="500" />
