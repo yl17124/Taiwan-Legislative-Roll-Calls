@@ -16,7 +16,7 @@
   <img width="560" height="400" src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-6-1.png" >
 </p>
 
-## Estimates of Ideological Positioning during the Electoral Systen Change (by Year)
+## Estimates of Ideological Positioning during the Electoral Systen Change (by Years)
 
 <p align="center">
   <img width="530" height="400" src="https://github.com/yl17124/taiwanRC/blob/master/plot_code_files/figure-gfm/unnamed-chunk-7-1.png" >
