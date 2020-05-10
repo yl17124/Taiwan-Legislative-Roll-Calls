@@ -1,6 +1,6 @@
 ##  Electoral Reform and Ideological Positioning: Heterogeneous Evidence from Taiwan Legislative Roll Calls (Paper 3)
 
-- This repository stores scripts, plots, and data for initial analytics to Taiwan legislative roll calls from 1993 to 2015. The final draft will present at the panel of Candidates within Parties in 2020 APSA. 
+- This repository stores scripts, plots, and data for initial analytics to Taiwan legislative roll calls from 1993 to 2015. The final draft will present at the panel of Candidates within Parties in 2020 APSA. This project is supervised by [Royce Carroll](https://www.essex.ac.uk/people/carro40801/royce-carroll) and [Nicole Rae Baerg]http://www.nicolebaerg.com)
 
 - The analysis for this project heavily relys on a large amount of data processing from computational clusters. I thank [CERES IT](https://hpc.essex.ac.uk/) at University of Essex for providing HPC clusters.
 
