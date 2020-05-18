@@ -4,6 +4,7 @@
 
 - The analysis for this project heavily relys on a large amount of data processing from computational clusters. I thank [CERES IT](https://hpc.essex.ac.uk/) at University of Essex for providing HPC clusters.
 
+- A part of Data analyzed in this project were collected by the Center for Legislative Studies, Department of Political Science Soochow University, and directed by Profession Shiow-Duan Hawang. The author appreciate the assistance in providing data by the Center for Legislative Studies, Soochow University. 
 
 ## Estimates of Ideological Positioning during the Electoral Systen Change (by Sessions)
 
