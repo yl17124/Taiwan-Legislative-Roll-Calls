@@ -4,7 +4,7 @@
 
 - The data analysis for this project heavily relys on a large amount of data processing from computational clusters. I thank [CERES IT](https://hpc.essex.ac.uk/) at University of Essex for providing HPC clusters.
 
-- The roll call data analyzed in this project were collected by [the Center for Legislative Studies](http://cls.idc.scu.edu.tw/), Department of Political Science Soochow University, and directed by [Profession Shiow-Duan Hawang](https://ahrccfc.weebly.com/shiow-duan-hawang.html). The author appreciate the assistance in providing data by the Center for Legislative Studies, Soochow University. 
+- The roll call data analyzed in this project were collected by [the Center for Legislative Studies](http://cls.idc.scu.edu.tw/), Department of Political Science Soochow University, and directed by [Profession Shiow-Duan Hawang](https://ahrccfc.weebly.com/shiow-duan-hawang.html). The author alos appreciate the assistance in providing data. 
 
 ## Estimates of Ideological Positioning during the Electoral Systen Change (by Sessions)
 
