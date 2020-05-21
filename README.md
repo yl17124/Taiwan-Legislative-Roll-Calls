@@ -2,7 +2,7 @@
 
 - This repository stores scripts, plots, and data for initial analytics to Taiwan legislative roll calls from 1993 to 2015. The final draft will present at the panel of Candidates within Parties in 2020 APSA. This project is supervised by [Royce Carroll](https://www.essex.ac.uk/people/carro40801/royce-carroll) and [Nicole Rae Baerg](http://www.nicolebaerg.com).
 
-- The roll call data analyzed in this project were collected by [the Center for Legislative Studies](http://cls.idc.scu.edu.tw/), Department of Political Science Soochow University, and directed by [Profession Shiow-Duan Hawang](https://ahrccfc.weebly.com/shiow-duan-hawang.html). The author alos appreciate the assistance in providing data. 
+- The roll call data analyzed in this project were collected by [the Center for Legislative Studies](http://cls.idc.scu.edu.tw/), Department of Political Science Soochow University, and directed by [Profession Shiow-Duan Hawang](https://ahrccfc.weebly.com/shiow-duan-hawang.html). The author alos appreciate the assistance in providing the data. 
 
 ## Estimates of Ideological Positioning during the Electoral Systen Change (by Sessions)
 
