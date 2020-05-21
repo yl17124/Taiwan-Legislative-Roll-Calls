@@ -4,7 +4,8 @@
 
 - The roll call data analyzed in this project were collected by [the Center for Legislative Studies](http://cls.idc.scu.edu.tw/), Department of Political Science Soochow University, and directed by [Profession Shiow-Duan Hawang](https://ahrccfc.weebly.com/shiow-duan-hawang.html). The author alos appreciate the assistance in providing the data. 
 
-## Estimates of Ideological Positioning during the Electoral Systen Change (by Sessions)
+
+## Vote Summary 
 
 
 |   Term / Count (%)   |   2nd term    |   3rd term    |   4th term    |   5th term    |   6th term    |   7th term    |   8th term    |
@@ -19,8 +20,7 @@
 |                      |   (44.4)      |    (1.5)      |   (37.6)      |   (15.5)      |   (23.3)      |   (42.1)      |    (27.7)     |
 
 
-
-<br/><br/>
+## Estimates of Ideological Positioning during the Electoral Systen Change (by Sessions)
 
 
 
